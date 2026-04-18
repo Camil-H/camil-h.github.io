@@ -1,0 +1,55 @@
+<div class="cmd-palette" id="commandPalette" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="cmd-backdrop" onclick="closeCommandPalette()"></div>
+  <div class="cmd-modal">
+    <div class="cmd-input-wrap">
+      <svg class="cmd-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M11.5 7C11.5 9.48528 9.48528 11.5 7 11.5C4.51472 11.5 2.5 9.48528 2.5 7C2.5 4.51472 4.51472 2.5 7 2.5C9.48528 2.5 11.5 4.51472 11.5 7Z" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input
+        type="text"
+        class="cmd-input"
+        id="cmdInput"
+        placeholder="Search posts, navigate..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <kbd class="cmd-esc">Esc</kbd>
+    </div>
+    <div class="cmd-results" id="cmdResults">
+      <div class="cmd-group">
+        <div class="cmd-group-title">Navigation</div>
+        <a href="/" class="cmd-item" data-keywords="home main landing">
+          <span class="cmd-item-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 6L8 1.5L14 6V13.5C14 14.0523 13.5523 14.5 13 14.5H3C2.44772 14.5 2 14.0523 2 13.5V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="cmd-item-label">Home</span>
+        </a>
+        <a href="/blog/" class="cmd-item" data-keywords="blog ideas editos thoughts opinions">
+          <span class="cmd-item-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1C4.96243 1 3 3.23858 3 6C3 7.68 3.84 9.14 5 10V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V10C12.16 9.14 13 7.68 13 6C13 3.23858 11.0376 1 8 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 15H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="cmd-item-label">Blog</span>
+        </a>
+        <a href="/code/" class="cmd-item" data-keywords="code programming development projects memo">
+          <span class="cmd-item-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.5 4.5L2 8L5.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 4.5L14 8L10.5 11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="cmd-item-label">Code</span>
+        </a>
+        <a href="/research/" class="cmd-item" data-keywords="research papers academic">
+          <span class="cmd-item-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2.5H5.5C6.60457 2.5 7.5 3.39543 7.5 4.5V13.5C7.5 12.6716 6.82843 12 6 12H2V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2.5H10.5C9.39543 2.5 8.5 3.39543 8.5 4.5V13.5C8.5 12.6716 9.17157 12 10 12H14V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="cmd-item-label">Research</span>
+        </a>
+      </div>
+      <div class="cmd-group" id="cmdPostResults">
+        <div class="cmd-group-title">Posts</div>
+        <!-- Populated by JS -->
+      </div>
+    </div>
+    <div class="cmd-footer">
+      <span class="cmd-hint"><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span>
+      <span class="cmd-hint"><kbd>&crarr;</kbd> open</span>
+      <span class="cmd-hint"><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>

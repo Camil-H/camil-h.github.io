@@ -1,0 +1,40 @@
+---
+layout: default
+title: Research
+---
+
+<div class="category-page">
+  <header class="category-page-header fade-in">
+    <h1 class="category-page-title">Research</h1>
+    <p class="category-page-desc">Papers, findings, and deep dives.</p>
+  </header>
+
+  {% assign research_posts = site.posts | where: "category", "research" %}
+  {% if research_posts.size > 0 %}
+  <div class="cards">
+    {% for post in research_posts %}
+    <a href="{{ post.url | relative_url }}" class="card fade-in">
+      <div class="card-meta">
+        <span class="card-category card-category--research">research</span>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      </div>
+      <h3 class="card-title">{{ post.title }}</h3>
+      {% if post.excerpt %}
+      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+      {% endif %}
+      <div class="card-footer">
+        Read more &rarr;
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state fade-in">
+    <p>No posts yet. Check back soon.</p>
+  </div>
+  {% endif %}
+</div>
+
+{% for post in site.posts %}
+<div hidden data-post-title="{{ post.title }}" data-post-url="{{ post.url | relative_url }}" data-post-keywords="{{ post.category }} {{ post.tags | join: ' ' }}"></div>
+{% endfor %}

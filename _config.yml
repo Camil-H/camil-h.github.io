@@ -1,3 +1,33 @@
-theme: jekyll-theme-minimal
-title: Camil Haroune's blog
-description: Keep an eye on my project updates!
+title: Camil Haroune
+description: Ideas, coding, and research.
+url: "https://camil-haroune.com"
+baseurl: ""
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:categories/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude
+exclude:
+  - CLAUDE.md
+  - .claude
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

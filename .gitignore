@@ -1,0 +1,9 @@
+# CLAUDE
+CLAUDE.md
+.claude/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
