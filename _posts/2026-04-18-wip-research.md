@@ -6,6 +6,4 @@ category: research
 tags: [wip]
 ---
 
-# Construction in progress
-
 🚧 Come back later!
