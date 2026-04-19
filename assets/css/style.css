@@ -211,7 +211,7 @@ pre code {
   height: 56px;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .nav-logo {
@@ -242,6 +242,7 @@ pre code {
   opacity: 0.5;
 }
 
+/* --- Desktop: flat nav links (visible > 900px) --- */
 .nav-links {
   display: flex;
   align-items: center;
@@ -269,15 +270,88 @@ pre code {
   color: var(--text-primary);
 }
 
+/* --- Compact: dropdown nav menu (visible <= 900px) --- */
+.nav-dropdown {
+  display: none;
+  position: relative;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+.nav-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-tertiary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-dropdown-trigger:hover,
+.nav-dropdown.is-open .nav-dropdown-trigger {
+  color: var(--text-secondary);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 140px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  z-index: 200;
+}
+
+.nav-dropdown.is-open .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: calc(var(--radius-md) - 4px);
+  transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+.nav-dropdown-item:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.nav-dropdown-item.is-active {
+  color: var(--text-primary);
+}
+
+/* --- Nav actions --- */
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
-/* Command trigger button */
-.cmd-trigger {
+/* --- Desktop: full search bar (visible > 900px) --- */
+.cmd-trigger--full {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -295,14 +369,14 @@ pre code {
   min-width: 240px;
 }
 
-.cmd-trigger:hover {
+.cmd-trigger--full:hover {
   color: var(--text-secondary);
   border-color: var(--border-strong);
   box-shadow: var(--shadow-sm);
 }
 
 .cmd-trigger-text {
-  display: none;
+  flex: 1;
 }
 
 .cmd-trigger-kbd {
@@ -319,7 +393,28 @@ pre code {
   font-size: 0.85rem;
 }
 
-/* Theme switch (3-position segmented) */
+/* --- Compact: icon-only search (visible <= 900px) --- */
+.cmd-trigger--icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-tertiary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cmd-trigger--icon:hover {
+  color: var(--text-secondary);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+/* --- Desktop: 3-button theme switch (visible > 900px) --- */
 .theme-switch {
   display: flex;
   align-items: center;
@@ -371,6 +466,41 @@ pre code {
 [data-theme="light"] .theme-switch-indicator { transform: translateX(0); }
 [data-theme="auto"]  .theme-switch-indicator { transform: translateX(32px); }
 [data-theme="dark"]  .theme-switch-indicator { transform: translateX(64px); }
+
+/* --- Compact: single cycling theme button (visible <= 900px) --- */
+.theme-cycle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-tertiary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.theme-cycle:hover {
+  color: var(--text-secondary);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-icon {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-light,
+[data-theme="auto"]  .theme-icon-auto,
+[data-theme="dark"]  .theme-icon-dark {
+  display: block;
+}
+
+:root:not([data-theme="light"]):not([data-theme="dark"]) .theme-icon-auto {
+  display: block;
+}
 
 /* --- Main --- */
 .main {
@@ -993,14 +1123,24 @@ pre code {
 .fade-in:nth-child(6) { transition-delay: 0.25s; }
 
 /* --- Responsive --- */
+
+/* Tablet: compact search + theme, keep flat nav links */
+@media (max-width: 900px) {
+  .cmd-trigger--full  { display: none; }
+  .theme-switch       { display: none; }
+
+  .cmd-trigger--icon  { display: flex; }
+  .theme-cycle        { display: flex; }
+}
+
+/* Mobile: swap flat nav links for hamburger dropdown */
 @media (max-width: 768px) {
   .nav-inner {
     padding: 0 1rem;
   }
 
-  .nav-links {
-    display: none;
-  }
+  .nav-links          { display: none; }
+  .nav-dropdown       { display: block; }
 
   .main {
     padding: 0 1rem;
@@ -1025,18 +1165,8 @@ pre code {
     justify-content: center;
   }
 
-  .cmd-trigger-text {
-    display: none;
-  }
-
   .footer-inner {
     padding: 0 1rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .cmd-trigger-text {
-    display: inline;
   }
 }
 

@@ -21,6 +21,38 @@ function updateThemeSwitch(theme) {
   });
 }
 
+var themeCycle = ['light', 'auto', 'dark'];
+
+function cycleTheme() {
+  var current = getTheme();
+  var idx = themeCycle.indexOf(current);
+  var next = themeCycle[(idx + 1) % themeCycle.length];
+  setTheme(next);
+}
+
+// --- Nav dropdown ---
+
+function toggleNavDropdown() {
+  var dropdown = document.querySelector('.nav-dropdown');
+  if (!dropdown) return;
+  var isOpen = dropdown.classList.toggle('is-open');
+  dropdown.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', isOpen);
+}
+
+function closeNavDropdown() {
+  var dropdown = document.querySelector('.nav-dropdown');
+  if (!dropdown) return;
+  dropdown.classList.remove('is-open');
+  dropdown.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+}
+
+document.addEventListener('click', function(e) {
+  var dropdown = document.querySelector('.nav-dropdown');
+  if (dropdown && !dropdown.contains(e.target)) {
+    closeNavDropdown();
+  }
+});
+
 // --- Command Palette ---
 
 var commandPalette = null;
