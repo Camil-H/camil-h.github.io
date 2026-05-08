@@ -1,0 +1,17 @@
+Package: cli-agent-lint
+Priority: optional
+Section: utils
+Installed-Size: 3448
+Maintainer: Camil-H <Camil-H@users.noreply.github.com>
+Architecture: amd64
+Version: 0.3.5
+Filename: pool/main/c/cli-agent-lint/cli-agent-lint_0.3.5_linux_amd64.deb
+Size: 1491704
+MD5sum: ed6e42ee3b1b20ef244bd79d8a1a5957
+SHA1: 7ef561928c21e16ee917dc2329aff800417c9dfd
+SHA256: c279130deff72f3bbf05d63da9bdd7952a2f89b6ff93790266298619f27139c8
+SHA512: bc34ca583b0336b471e7146f2c23ce201575baed119185a9f7c8d9f66b85be3ad1912d497d1a41926ee6ee1ec8ff2ff4ff859ce48eef4f0136e5994937109ac3
+Description: Audit CLI tools for AI agent-readiness
+Architecture-Variant: amd64v1
+Homepage: https://github.com/Camil-H/cli-agent-lint
+
