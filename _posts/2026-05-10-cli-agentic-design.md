@@ -1,6 +1,6 @@
 ---
 title: "Why bother designing for humans? CLIs will be used by agents anyway"
-subtitle: "If most programmatic tools will not be used by humans in the future, why keep designing them for humans?"
+subtitle: "Most coding tools won't be used by humans, why keep designing for humans?"
 date: 2026-05-10
 category: code
 tags: [ai, agents, cli, cli-agent-lint]
