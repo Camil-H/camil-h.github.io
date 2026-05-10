@@ -19,8 +19,8 @@ title: Blog
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
       </div>
       <h3 class="card-title">{{ post.title }}</h3>
-      {% if post.excerpt %}
-      <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+      {% if post.subtitle %}
+      <p class="card-excerpt">{{ post.subtitle }}</p>
       {% endif %}
       <div class="card-footer">
         Read more &rarr;
