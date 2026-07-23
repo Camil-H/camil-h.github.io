@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Knowledge Secretary</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    line-height: 1.55;
+    color: #1c1c1c;
+    background: #fbfbfa;
+  }
+  h1 { margin-bottom: 0.2rem; }
+  .subtitle { color: #555; margin-top: 0; }
+  .updated { color: #888; font-size: 0.85rem; }
+  .day {
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border: 1px solid #e3e2df;
+    border-radius: 10px;
+  }
+  .day h2 { margin-top: 0; }
+  details.day summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.25rem 0;
+    list-style: none;
+  }
+  details.day summary::-webkit-details-marker { display: none; }
+  details.day summary::before { content: "▸ "; }
+  details.day[open] summary::before { content: "▾ "; }
+  article.task {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+  article.task:first-of-type { border-top: none; padding-top: 0; }
+  article.task h3 { margin-bottom: 0.4rem; }
+  audio { width: 100%; margin-top: 0.4rem; }
+  .topic { color: #444; font-style: italic; }
+  a { color: #0a5; }
+</style>
+</head>
+<body>
+<h1>Knowledge Secretary</h1>
+<p class="subtitle">Daily newsletter, YouTube digest, and technical podcast</p>
+<p class="updated">Updated <time class="js-datetime" datetime="2026-07-23T00:34:49.028468+00:00">2026-07-23T00:34:49.028468+00:00</time></p>
+<section class="day today"><h2><time class="js-date" datetime="2026-07-23">2026-07-23</time></h2><article class="task newsletter"><h3>Newsletter</h3><p><strong>TL;DR</strong> — The gap between computational promise and clinical reality sharpened this week: Derek Lowe argues AI-driven candidate abundance will hit immutable clinical-throughput ceilings, while benchmarking work exposes data leakage inflating protein–ligand model performance. Dealmaking stays frothy — Vertex paid a 102% premium as sole bidder for Crinetics, and GSK converted its $10.6B Nuvalent buy into an immediate FDA approval for ROS1 inhibitor Jideytro. Arrowhead’s plozasiran delivered a “best-case” Phase 3 in severe hypertriglyceridemia, but Agios dropped tebapivat in sickle cell and Celldex’s barzolvolimab failed in prurigo nodularis. Novo sued Lilly over comparative advertising as Zepbound pulls ahead of Wegovy. Trump threatened 200% tariffs on generic imports, while the FDA launched its TEMPO digital-health pilot with Dexcom and moved to revoke two petroleum-based color additives.</p>
+<hr />
+<h2>Blogs</h2>
+<p><strong><a href="https://www.science.org/content/blog-post/thoughts-netflix-analogy">Thoughts on the "Netflix Analogy"</a></strong> — <em>Derek Lowe, Science.org</em><br />
+- Argues the “AI abundance” narrative (generative biology collapsing marginal cost of candidates) misses the immutable bottleneck: clinical trial capacity (patients, investigators, regulatory slots) does not scale like software.<br />
+- Core risks — wrong target, unexpected toxicity — remain unmitigated until human trials; higher influx of “progressable” compounds will likely just raise the bar for clinic entry, not increase throughput.<br />
+- Questions whether AI is actually delivering on hypothesis generation and multi-parameter optimization today, noting venture defensibility based on “novel target/platform” claims already looks commoditized.</p>
+<p><strong><a href="https://www.science.org/content/blog-post/benchmarking-benchmarks">Benchmarking the Benchmarks</a></strong> — <em>Derek Lowe, Science.org</em><br />
+- Highlights a new preprint (Mattsson &amp; Walters) showing persistent data leakage in co-folding ML models for protein–ligand structure prediction: test sets share homologous proteins or similar binding sites with training data, inflating performance.<br />
+- Ligand-only controls still yield “respectable” scores, evidence of memorization over generalization.<br />
+- Authors propose a Novelty-Tiered Affinity Benchmark that stratifies by ligand similarity; popular ML packages drop sharply on it, confirming overestimation. Calls for rigorous holdout design before trusting predictions on truly novel targets.</p>
+<p><strong><a href="https://sciencebasedmedicine.org/the-madness-of-crowding/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=the-madness-of-crowding">The Madness of Crowding</a></strong> — <em>Science-Based Medicine</em><br />
+- Infectious disease perspective: crowding (military camps, schools, indoor gatherings) drives respiratory virus spread; historical data show infections routinely killed more soldiers than combat (WWI flu/pneumonia &gt; enemy weapons).<br />
+- Argues vaccines are the only effective countermeasure; cites recent Lackland AFB flu outbreak (275 cases, 1 death) after vaccine mandate removal, and evidence that high testosterone blunts flu vaccine response.<br />
+- Dismisses “lifestyle prevention” narratives: immune polymorphism dictates susceptibility; avoidance of eating/breathing/sex is impractical.</p>
+<hr />
+<h2>News</h2>
+<p><strong><a href="https://www.biopharmadive.com/news/vertex-crinetics-acquisition-deal-bidder-process/825952/">Vertex was sole bidder in high-premium Crinetics acquisition</a></strong> — <em>BioPharma Dive</em><br />
+- Vertex acquired Crinetics for $85/share (102% premium, ~$10B) after a 6-month process where six other potential buyers declined or dropped out; Crinetics board counter-offered $87, Vertex held at $85 final.<br />
+- Crinetics has one marketed drug (acromegaly) and a Phase 3 asset in congenital adrenal hyperplasia; Vertex models &gt;$5B peak combined sales. Analysts debate whether price assumes “bullish case” and note sole-bidder dynamic reinforces overpay concerns.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/gsk-nuvalent-jideytro-fda-approve-ros1-lung-cancer/825967/">GSK lung cancer drug gets speedy approval following $10.6B deal</a></strong> — <em>BioPharma Dive</em><br />
+- FDA approved Jideytro (zidesamtinib) for previously treated ROS1+ metastatic NSCLC, well ahead of Sept. 18 PDUFA, leveraging breakthrough/orphan designations.<br />
+- GSK closed the Nuvalent acquisition last week; Jideytro touted for high selectivity, broad resistance-mutation coverage, and CNS penetration. ROS1+ NSCLC ~2% of cases (~50K patients globally); competitors (Xalkori, Rozlytrek) have modest sales.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/arrowhead-plozasiran-results-triglyceride-severe-data-trials/825909/">Arrowhead hits ‘best-case scenario’ with latest results for fat-lowering drug</a></strong> — <em>BioPharma Dive</em><br />
+- Plozasiran (Redemplo, q3-month siRNA) cut median triglycerides 79–81% vs ~27% placebo in two Phase 3 severe hypertriglyceridemia trials; pooled acute pancreatitis events fell 78%. Safety clean: no clinically meaningful LFT changes, thrombocytopenia, or hypersensitivity.<br />
+- Arrowhead plans sNDA by year-end. Analysts note dosing advantage vs monthly Tryngolza (Ionis) and no mean liver fat increase — a potential differentiator. Shares +23%.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/trump-tariffs-generic-drugs-pharmaceuticals-impact/825879/">Trump threatens tariffs on imported generic drugs</a></strong> — <em>BioPharma Dive</em><br />
+- Truth Social post: 100% tariff Aug 1, 2028, rising to 200% thereafter unless production moves to US. No legal/implementation details; Supreme Court ruled Feb 2026 Trump cannot unilaterally impose tariffs.<br />
+- Generic margins thin — tariffs risk shortages, discontinuations, quality cuts. AAM calls for talks on “market deficiencies.” Jefferies: finished-product-only levies favor Amphastar/ANI; Apotex (heavy importer) fell 9%.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/summit-ivonescimab-celldex-gilead-merck-hiv-kaveri-jupiter/825817/">Summit counters PD-1/VEGF skeptics; Celldex drug fails skin disease study</a></strong> — <em>BioPharma Dive</em><br />
+- Summit/Akeso’s ivonescimab: longer follow-up in 2L EGFRm NSCLC shows OS HR improving from 0.79 to 0.76 (24% death-risk reduction), consistent across China/Western populations — counters “China-only” skepticism. Front-line global readout expected H2.<br />
+- Celldex’s barzolvolimab (anti-KIT) missed all endpoints in Phase 2 prurigo nodularis; discontinued in that indication. Phase 3 chronic spontaneous urticaria readout Sept/Oct; analysts remain bullish given clean safety.<br />
+- Gilead/Merck: islatravir/lenacapavir weekly HIV regimen — 0% detectable HIV at 48w vs 0.3% (Biktarvy) and 1.3% (standard); comparable safety. RBC notes profit-split dilutes Gilead as patients switch off Biktarvy.<br />
+- Lupin spins LNP7457/LNP8701 into Kaveri Therapeutics (82.2% owned); Jupiter Neuroscience licenses US rights to PharmAla’s ALA-002 (low-abuse MDMA) for $3.33M upfront + ~$97M milestones.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/crystalys-gout-dotinurad-series-b-venture-financing/825697/">Crystalys nets $130M more to push gout drug through late-stage tests</a></strong> — <em>BioPharma Dive</em><br />
+- Series B led by Frazier Life Sciences (Wellington, Cormorant, SR One, Novo Holdings). Doturinad (URAT1 inhibitor, approved Japan 2020, China, Philippines, Thailand) vs allopurinol in two global Phase 3 trials (24w, results 2027); Phase 2 in allopurinol-intolerant/refractory.<br />
+- Crystalys argues dotinurad binds URAT1 more precisely than failed Zurampic (kidney toxicity), enabling kidney-sparing profile. FDA allowed direct entry to Phase 3 given established safety.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/agios-sickle-cell-drug-development-end-tebapivat/825756/">Agios scraps sickle cell drug</a></strong> — <em>BioPharma Dive</em><br />
+- Tebapivat (next-gen pyruvate kinase activator) failed Phase 2: “did not demonstrate differentiation required.” Shares -6.5%. Leerink: tebapivat was primary sickle cell differentiator vs Novo’s mitapivat (positive Ph3); now greater weight on mitapivat sickle cell filing (FDA decision Nov 1) and BD/early pipeline.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/novo-lilly-lawsuit-obesity-drug-glp1-marketing/825772/">Novo sues Lilly, alleging ‘misleading’ advertising of obesity drugs</a></strong> — <em>BioPharma Dive</em><br />
+- Novo filed in NJ federal court: Lilly ads compare max-dose Zepbound/Mounjaro to <em>original</em> lower-dose Wegovy/Ozempic, ignoring Novo’s new 7.2 mg Wegovy (~19% wt loss vs Zepbound’s 21%). Seeks injunction + corrective advertising.<br />
+- Lilly cites SURMOUNT-5 head-to-head (2.4 mg Wegovy vs Zepbound) as gold standard; calls ads “truthful, transparent.” Novo counters: fine-print disclaimers don’t fix misleading national campaigns.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/dimension-biotech-startups-third-fund-tech-ai/825748/">Dimension restocks with $800M to capitalize on AI’s ‘rapid ascent’</a></strong> — <em>BioPharma Dive</em><br />
+- Dimension (ex-Lux/Obvious partners) closes Fund III at $800M ($1.65B AUM, 35 portfolio cos). Investments span seed to crossover: Chai Discovery, NewLimit, Earendil Labs ($787M Series C), Odyssey Therapeutics (led crossover + anchored IPO), Monte Rosa follow-on, Coefficient Labs acquired by Anthropic ($400M).<br />
+- Founders: timelines compressed years→months; “digitization of drugmaking” blurring science/computing lines.</p>
+<p><strong><a href="https://www.biopharmadive.com/news/novartis-earnings-2q-2026-drug-sales/825746/">Novartis climbs on upbeat drug sales as key readouts loom</a></strong> — <em>BioPharma Dive</em><br />
+- Q2 sales +1% cc to $14.4B (beat $13.7B est); core OI $5.94B (beat $5.31B). Priority brands (Kisqali, Kesimpta, Scemblix, Pluvicto, Leqvio) +30%+; Entresto -50% to $1.18B (generic erosion).<br />
+- Patent cliff ahead: Entresto EU 2028, Cosentyx US 2029, Kesimpta/Kisqali US 2031. H2 readouts: pelacarsen Ph3, del-desiran (myotonic dystrophy, from Avidity), remibrutinib expansion, others. Guidance: low-single-digit sales growth, low-single-digit core OI decline.</p>
+<hr />
+<h2>Papers &amp; Preprints</h2>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42485386/">Deciphering the mechanism of protein aggregation and effects of inhibitors using single-molecule mass photometry</a></strong> — <em>PubMed</em><br />
+- Single-molecule mass photometry resolves aggregation pathways and inhibitor mechanisms in real time; applicable to amyloidogenic systems.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42484993/">Multi-target-directed drugs: new additions in 2025 and post-marketing safety surveillance of drugs marketed in 2022-2024</a></strong> — <em>PubMed</em><br />
+- Catalog of recently approved multi-target agents and early real-world safety signals; highlights polypharmacology trend.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42484693/">Learning the assay, not the hazard: how computational toxicity models inherit the artifacts of their high-throughput training data</a></strong> — <em>PubMed</em><br />
+- Shows in vitro assay artifacts (e.g., fluorescence interference, cytotoxicity) propagate into ML toxicity predictors, limiting translational reliability.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42484069/">Structure-Based Design of Potent TLR7/8/9 Triple Antagonists: Overcoming High Tissue Distribution and Reactive Metabolite Liabilities</a></strong> — <em>PubMed</em><br />
+- Medicinal chemistry campaign yielding triple antagonists with reduced tissue accumulation and mitigated reactive metabolite risk.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42483959/">Discovery of a Dual IDO1/TDO Inhibitor That Modulates Enzymatic Activity and IDO1/SHP-2 Signaling</a></strong> — <em>PubMed</em><br />
+- Dual inhibitor engages both tryptophan catabolism enzymes and modulates IDO1–SHP-2 protein–protein interaction; in vivo efficacy in tumor models.</p>
+<p><em>Remaining entries (novel diindolylmethanes, Ru-catalyzed benzodiazepine sulfonamidation, vagal/splenic hepcidin regulation, Securinega alkaloids &amp; circadian clock, curcumin/dexamethasone nanodispersions for AMD, quaternary ammonium photosensitizers vs MDR bacteria, C-section microbiota/metabolic disease, KMT2B/H3K4me3/autophagy in atherosclerosis, coumarin carboxamide AChE/BChE/anticancer, AI in African molecular biology review) are abstract-only; omitted for brevity.</em></p>
+<hr />
+<h2>Regulatory</h2>
+<p><strong><a href="http://www.fda.gov/news-events/press-announcements/fda-announces-first-participant-selected-tempo-digital-health-devices-pilot">FDA Announces First Participant Selected for TEMPO for Digital Health Devices Pilot</a></strong> — <em>FDA</em><br />
+- Dexcom selected as first TEMPO participant; its Glucose Health Program will be evaluated for CMS ACCESS model alignment (prediabetes/T2D screening, glycemic control, HbA1c reduction).<br />
+- TEMPO aims to generate real-world evidence for digital health tech in chronic care (cardio-kidney-metabolic, musculoskeletal, behavioral health) while safeguarding safety. Up to ~10 participants per ACCESS clinical use area planned.</p>
+<p><strong><a href="http://www.fda.gov/news-events/press-announcements/fda-takes-further-steps-remove-outdated-authorizations-color-additives-food">FDA Takes Further Steps to Remove Outdated Authorizations for Color Additives in Food</a></strong> — <em>FDA</em><br />
+- Final order revoking Orange B (abandoned use); proposed revocation of Citrus Red No. 2 (orange skin dye, authorized 1959, deemed abandoned). 30-day comment period (docket FDA-2026-N-6304). Part of broader petroleum-based dye phase-out.</p>
+<hr />
+<p><strong>Worth watching</strong> — Summit’s front-line ivonescimab OS readout (H2) will test whether the China/Western consistency holds in a broader population; Arrowhead’s sNDA and head-to-head positioning vs Tryngolza in severe HTG; whether Trump’s generic tariff threat materializes into policy or remains leverage; and Novartis’ pelacarsen/del-desiran data as pipeline validators against the Entresto cliff.</p></article><article class="task youtube"><h3>YouTube</h3><ul>
+<li>Biology &amp; Health<ul>
+<li><a href="https://www.youtube.com/shorts/7B0czN3Hbso">Doctors Didn’t Want AI for Diagnoses…</a> -- Digital Health Inside Out<ul>
+<li>(no transcript available)</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/shorts/6y9xD9VlpKM">The Biggest Irony About AI</a> -- Digital Health Inside Out<ul>
+<li>(no transcript available)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Pure Science<ul>
+<li><a href="https://www.youtube.com/shorts/2_VB-oc_pmk">What happens to Schrödinger's cat?</a> -- Veritasium<ul>
+<li>(no transcript available)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></article></section>
+<script>
+  // Reformat UTC dates to the viewer's locale (js-date: calendar day, no tz shift; js-datetime: instant).
+  for (const el of document.querySelectorAll("time.js-date"))
+    el.textContent = new Date(el.getAttribute("datetime"))
+      .toLocaleDateString(undefined, {dateStyle: "long", timeZone: "UTC"});
+  for (const el of document.querySelectorAll("time.js-datetime"))
+    el.textContent = new Date(el.getAttribute("datetime"))
+      .toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"});
+</script>
+</body>
+</html>
