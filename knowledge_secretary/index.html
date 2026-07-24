@@ -88,6 +88,15 @@
   .task h1, .task h2 { font-size: 1.1rem; }
   .task h3, .task h4 { font-size: 1rem; }
   .task-label + * { margin-top: 0; }
+  .notice {
+    background: rgba(244, 208, 111, 0.14);
+    border: 1px solid rgba(244, 208, 111, 0.55);
+    border-radius: 10px;
+    padding: 0.55rem 0.85rem;
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
   .task p { margin: 0.55rem 0; color: var(--text-secondary); }
   .task ul, .task ol { margin: 0.4rem 0 0.9rem; padding-left: 1.4rem; color: var(--text-secondary); }
   .task li { margin: 0.3rem 0; }
@@ -106,87 +115,128 @@
 <body>
 <h1>Knowledge Secretary</h1>
 <p class="subtitle">Daily newsletter, YouTube digest, and technical podcast</p>
-<p class="updated">Updated <time class="js-datetime" datetime="2026-07-23T19:27:15.727050+00:00">2026-07-23T19:27:15.727050+00:00</time></p>
-<section class="day today"><h2><time class="js-date" datetime="2026-07-23">2026-07-23</time></h2><article class="task newsletter"><h3 class="task-label">Newsletter</h3><h2>News</h2>
-<p><strong><a href="https://www.statnews.com/2026/07/23/cyclospora-second-outbreak-reported-fda-cites-72-new-cases/?utm_campaign=rss">U.S. health officials are investigating a new outbreak of a diarrhea-causing parasite</a></strong> — STAT News<br />
-- FDA reports 72 new cases in a second cyclospora outbreak under investigation<br />
+<p class="updated">Updated <time class="js-datetime" datetime="2026-07-24T00:13:42.413092+00:00">2026-07-24T00:13:42.413092+00:00</time></p>
+<section class="day today"><h2><time class="js-date" datetime="2026-07-24">2026-07-24</time></h2><article class="task newsletter"><h3 class="task-label">Newsletter</h3><h2>Blogs</h2>
+<p><strong><a href="https://www.science.org/content/blog-post/assault-science-funding-continues" rel="noopener noreferrer">The Assault On Science Funding Continues</a></strong> — <em>Science.org</em><br>
+- Argues the Trump administration’s rhetoric about “gold standard science” and “reproducibility crisis” masks a deliberate effort to dismantle federal academic research funding (NIH, NSF) and redirect money to industry allies.<br>
+- Highlights Scott Atlas’s call to abolish the NIH and Michael Kratsios’s proposal to shift funding from life sciences to robotics/AI.<br>
+- Urges legal challenges, congressional oversight, and political mobilization rather than policy debate, which the author views as a distraction.</p>
+<h2>News</h2>
+<p><strong><a href="https://www.statnews.com/2026/07/23/fda-panel-okays-peptides-compound-pharmacies-bpc-157-kpv/?utm_campaign=rss" rel="noopener noreferrer">STAT+: In win for RFK Jr., FDA advisory panel narrowly votes to allow compounding of unapproved peptides</a></strong> — <em>STAT</em><br>
+- FDA advisory panel voted to permit compounding pharmacies to produce BPC-157 and KPV, two unapproved peptides with popular off-label use but no clinical efficacy data.<br>
+- Decision aligns with RFK Jr.’s push for expanded access to unregulated therapeutics; narrow vote reflects division over safety vs. patient access.</p>
+<h2>Papers &amp; Preprints</h2>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42492024/" rel="noopener noreferrer">Divergent Pyridine-to-Pyrazole Conversion via Carbon-Retentive Skeletal Editing</a></strong> — <em>PubMed</em><br>
+- New skeletal-editing method converts pyridines to pyrazoles while retaining all carbon atoms; potential for late-stage diversification of heterocycles.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490662/" rel="noopener noreferrer">Repurposing screens reveal a role for PKCη and NF1 in SARS-CoV-2 infection</a></strong> — <em>PubMed</em><br>
+- Drug-repurposing screens identify protein kinase C eta (PKCη) and neurofibromin 1 (NF1) as host factors supporting SARS-CoV-2 infection.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490642/" rel="noopener noreferrer">Practical crystallography with a transmission electron microscope</a></strong> — <em>PubMed</em><br>
+- Protocol for routine structure determination using transmission electron microcrystallography (MicroED), aimed at broader accessibility.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490529/" rel="noopener noreferrer">Identifying Cryptic Binding Sites with Mixed Solvent MD Simulation and SiteMap</a></strong> — <em>PubMed</em><br>
+- Combines mixed-solvent molecular dynamics with SiteMap to reveal cryptic pockets for structure-based drug design.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490492/" rel="noopener noreferrer">Late-stage functionalization with strain-release warheads enables tunable covalent inhibition</a></strong> — <em>PubMed</em><br>
+- Strain-release reactive groups allow late-stage installation of covalent warheads with adjustable reactivity for targeted inhibitor optimization.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490446/" rel="noopener noreferrer">Eukaryotic-like microtubules and dynamic instability of Asgard archaeal tubulins</a></strong> — <em>PubMed</em><br>
+- Asgard archaeal tubulins form microtubules exhibiting dynamic instability, suggesting eukaryotic cytoskeleton machinery has deep archaeal roots.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490415/" rel="noopener noreferrer">Ligand Drift Rate Descriptor in Receptor Pocket: Molecular Docking Sampling for Differentiating Partial Agonists in Nuclear Receptors</a></strong> — <em>PubMed</em><br>
+- Introduces a ligand drift rate metric from docking simulations to distinguish partial from full agonists at nuclear receptors.</p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490145/" rel="noopener noreferrer">Molecular Determinants of Ribosome Binding for the Antimicrobial Peptide Pdi1</a></strong> — <em>PubMed</em><br>
+- Structural and biochemical characterization of how the antimicrobial peptide Pdi1 engages the ribosome to inhibit translation.</p>
+<h2>X / Twitter</h2>
+<p><strong><a href="https://x.com/bradloncar/status/2080379247470772687" rel="noopener noreferrer">𝐔.𝐒. 𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐒𝐮𝐦𝐦𝐢𝐭: Walking the streets of Kendall...</a></strong> — <em>@bradloncar</em><br>
+- On-the-ground impression from the U.S. Science Summit in Kendall Square (Cambridge, MA): “biotech version of SimCity”; tour led by Scott Kirsner, dinner with Greg Verdine.</p></article><article class="task youtube"><h3 class="task-label">YouTube</h3><ul>
+<li>Pure Science<ul>
+<li><a href="https://www.youtube.com/watch?v=Srcz66KUDbY" rel="noopener noreferrer">How Fast Is the Universe Really Expanding? | PODCAST: The Joy of Why</a> -- Quanta Magazine<ul>
+<li>Adam Riess traces his path from graduate student to Nobel laureate, detailing how Type Ia supernovae serve as standardizable candles for measuring cosmic distances via the distance ladder (Cepheid variables, tip of the red giant branch, and supernovae in the same host galaxies).</li>
+<li>The 1998 discovery that distant supernovae were dimmer than expected revealed the universe’s expansion is accelerating, reviving Einstein’s cosmological constant as the leading explanation for dark energy within the ΛCDM model.</li>
+<li>The Hubble tension now centers on a ~9% discrepancy: the local distance-ladder measurement yields H₀ ≈ 73 km/s/Mpc, while the CMB-inferred ΛCDM value is ≈ 67 km/s/Mpc — a difference that exceeds 5σ and cannot be explained by known systematic errors.</li>
+<li>Riess outlines how new telescopes (JWST, Roman, ground-based ELTs) are targeting multiple independent distance anchors — Cepheids, TRGB, JAGB stars, and gravitational-wave standard sirens — to cross-check the distance ladder and test whether early-universe physics or new dark-energy dynamics resolve the tension.</li>
+<li>The tension may indicate physics beyond ΛCDM, such as early dark energy, neutrino self-interactions, or a running Planck mass, but Riess emphasizes that exhaustive systematic checks on the distance-ladder side continue before invoking new cosmology.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></article></section>
+<details class="day"><summary><time class="js-date" datetime="2026-07-23">2026-07-23</time></summary><article class="task newsletter"><h3 class="task-label">Newsletter</h3><h2>News</h2>
+<p><strong><a href="https://www.statnews.com/2026/07/23/cyclospora-second-outbreak-reported-fda-cites-72-new-cases/?utm_campaign=rss" rel="noopener noreferrer">U.S. health officials are investigating a new outbreak of a diarrhea-causing parasite</a></strong> — STAT News<br>
+- FDA reports 72 new cases in a second cyclospora outbreak under investigation<br>
 - Parasite causes prolonged watery diarrhea; source not yet identified</p>
-<p><strong><a href="https://www.statnews.com/pharmalot/2026/07/23/european-medicines-agency-bolster-clinical-trials-transparency/?utm_campaign=rss">STAT+: European regulators take steps to bolster clinical trial transparency</a></strong> — STAT Pharmalot<br />
-- EMA taking “rapid action” to enforce public posting of clinical trial results as legally required<br />
+<p><strong><a href="https://www.statnews.com/pharmalot/2026/07/23/european-medicines-agency-bolster-clinical-trials-transparency/?utm_campaign=rss" rel="noopener noreferrer">STAT+: European regulators take steps to bolster clinical trial transparency</a></strong> — STAT Pharmalot<br>
+- EMA taking “rapid action” to enforce public posting of clinical trial results as legally required<br>
 - Advocacy groups describe the move as unexpectedly aggressive</p>
-<p><strong><a href="https://www.statnews.com/2026/07/23/sanofi-insulin-lantus-solostar-pen-reported-short-supply/?utm_campaign=rss">STAT+: Popular insulin product enters shortage as other pens leave market</a></strong> — STAT Pharmalot<br />
-- Lantus Solostar (insulin glargine) not on FDA’s official shortage list but widely unavailable at pharmacies<br />
+<p><strong><a href="https://www.statnews.com/2026/07/23/sanofi-insulin-lantus-solostar-pen-reported-short-supply/?utm_campaign=rss" rel="noopener noreferrer">STAT+: Popular insulin product enters shortage as other pens leave market</a></strong> — STAT Pharmalot<br>
+- Lantus Solostar (insulin glargine) not on FDA’s official shortage list but widely unavailable at pharmacies<br>
 - Supply pressure coincides with other insulin pen exits</p>
-<p><strong><a href="https://www.statnews.com/2026/07/23/erica-schwartz-cdc-director-vote-delayed/?utm_campaign=rss">Senate health panel delays vote on CDC nominee</a></strong> — STAT News<br />
+<p><strong><a href="https://www.statnews.com/2026/07/23/erica-schwartz-cdc-director-vote-delayed/?utm_campaign=rss" rel="noopener noreferrer">Senate health panel delays vote on CDC nominee</a></strong> — STAT News<br>
 - Vote on Erica Schwartz for CDC director postponed due to insufficient senator attendance</p>
-<p><strong><a href="https://www.statnews.com/2026/07/23/health-policy-news-today-dc-diagnosis-newsletter-john-wilkerson-3/?utm_campaign=rss">STAT+: What’s in the last-minute flurry of health care bills?</a></strong> — STAT News<br />
+<p><strong><a href="https://www.statnews.com/2026/07/23/health-policy-news-today-dc-diagnosis-newsletter-john-wilkerson-3/?utm_campaign=rss" rel="noopener noreferrer">STAT+: What’s in the last-minute flurry of health care bills?</a></strong> — STAT News<br>
 - Congress advancing multiple bills before August recess; priorities include price transparency and prior-authorization reform</p>
-<p><strong><a href="https://www.biopharmadive.com/news/lilly-retatrutide-fda-application-obesity-drug-results/825987/">Lilly, with new data, to seek FDA approval of obesity drug retatrutide</a></strong> — BioPharma Dive<br />
-- Triumph-2 (T2D cohort): 20.8% mean weight loss at 80 weeks (highest dose); Triumph-3 (established CVD ± T2D): 22.6% mean weight loss<br />
-- Triple agonist (GLP-1, GIP, glucagon); Lilly targets Q1 2027 FDA filing, citing need for additional manufacturing/quality data<br />
+<p><strong><a href="https://www.biopharmadive.com/news/lilly-retatrutide-fda-application-obesity-drug-results/825987/" rel="noopener noreferrer">Lilly, with new data, to seek FDA approval of obesity drug retatrutide</a></strong> — BioPharma Dive<br>
+- Triumph-2 (T2D cohort): 20.8% mean weight loss at 80 weeks (highest dose); Triumph-3 (established CVD ± T2D): 22.6% mean weight loss<br>
+- Triple agonist (GLP-1, GIP, glucagon); Lilly targets Q1 2027 FDA filing, citing need for additional manufacturing/quality data<br>
 - MACE-3 events numerically higher vs placebo in Triumph-3 (27 vs 23); MACE-5 favored treatment; small sample/short follow-up limit interpretation</p>
 <h2>Papers &amp; Preprints</h2>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490053/">Fully Automatable Relative Binding Free Energy Calculations with Enhanced Sampling Using FAST/MBAR</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42490053/" rel="noopener noreferrer">Fully Automatable Relative Binding Free Energy Calculations with Enhanced Sampling Using FAST/MBAR</a></strong> — PubMed<br>
 - Method paper describing a fully automatable pipeline for relative binding free-energy calculations using FAST enhanced sampling and MBAR analysis</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489979/">Metagenomic screening of antimicrobial peptide candidates and isolation of two active peptides from bat gut bacteria</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489979/" rel="noopener noreferrer">Metagenomic screening of antimicrobial peptide candidates and isolation of two active peptides from bat gut bacteria</a></strong> — PubMed<br>
 - Metagenomic mining of bat gut microbiota yields two antimicrobial peptides with demonstrated activity</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489951/">Zebrafish as a versatile model in biomedical research, from disease modeling to regenerative medicine: a review</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489951/" rel="noopener noreferrer">Zebrafish as a versatile model in biomedical research, from disease modeling to regenerative medicine: a review</a></strong> — PubMed<br>
 - Review covering zebrafish utility across disease modeling, drug screening, and regenerative medicine applications</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489942/">From synaptic development to degeneration: a narrative review of small molecule strategies targeting alpha-synuclein in Parkinson's disease</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489942/" rel="noopener noreferrer">From synaptic development to degeneration: a narrative review of small molecule strategies targeting alpha-synuclein in Parkinson's disease</a></strong> — PubMed<br>
 - Narrative review summarizing small-molecule approaches targeting α-synuclein aggregation, toxicity, and clearance in PD</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489892/">7-azaindole as privileged scaffold: Advances in drug design and structural modification</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489892/" rel="noopener noreferrer">7-azaindole as privileged scaffold: Advances in drug design and structural modification</a></strong> — PubMed<br>
 - Review of 7-azaindole scaffold applications in medicinal chemistry, including structural modifications and target profiles</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489830/">From reagents to feedstocks: reprogramming heteroatom-containing molecules in modern organic synthesis</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489830/" rel="noopener noreferrer">From reagents to feedstocks: reprogramming heteroatom-containing molecules in modern organic synthesis</a></strong> — PubMed<br>
 - Review on strategies to repurpose heteroatom-rich reagents as synthetic feedstocks for complex molecule assembly</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489806/">PAK4 in the Tumor Immune Microenvironment: Biological Functions, Regulatory Mechanisms, and Targeted Therapeutic Strategies</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489806/" rel="noopener noreferrer">PAK4 in the Tumor Immune Microenvironment: Biological Functions, Regulatory Mechanisms, and Targeted Therapeutic Strategies</a></strong> — PubMed<br>
 - Review of PAK4’s role in immune modulation within the TME and progress on PAK4-targeted therapeutic approaches</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489649/">Recent advances in EGFR-targeted therapies for non-small cell lung cancer</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489649/" rel="noopener noreferrer">Recent advances in EGFR-targeted therapies for non-small cell lung cancer</a></strong> — PubMed<br>
 - Review covering latest EGFR inhibitors, resistance mechanisms, and combination strategies in NSCLC</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489503/">Drug Discovery of Allosteric Molecular Glue Degraders (aMGDs): Expanding the Landscape of Targeted Protein Degradation</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489503/" rel="noopener noreferrer">Drug Discovery of Allosteric Molecular Glue Degraders (aMGDs): Expanding the Landscape of Targeted Protein Degradation</a></strong> — PubMed<br>
 - Review on allosteric molecular glue degraders as an emerging modality in targeted protein degradation</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489501/">Consistent Quantitative Reporting in Medicinal Chemistry</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489501/" rel="noopener noreferrer">Consistent Quantitative Reporting in Medicinal Chemistry</a></strong> — PubMed<br>
 - Perspective/article advocating standardized quantitative reporting practices for medicinal chemistry data</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489321/">Discovery of a Novel Tripeptide Linker that Broadens the Therapeutic Window of Auristatin-Based Antibody-Drug Conjugates by Reducing Bone Marrow Toxicity</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489321/" rel="noopener noreferrer">Discovery of a Novel Tripeptide Linker that Broadens the Therapeutic Window of Auristatin-Based Antibody-Drug Conjugates by Reducing Bone Marrow Toxicity</a></strong> — PubMed<br>
 - New tripeptide linker reduces bone marrow toxicity of auristatin ADCs, widening therapeutic index</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489308/">Chemical studies on novel functional secondary metabolites from mushroom-forming fungi</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489308/" rel="noopener noreferrer">Chemical studies on novel functional secondary metabolites from mushroom-forming fungi</a></strong> — PubMed<br>
 - Isolation and characterization of bioactive secondary metabolites from basidiomycete fungi</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489154/">Synergistic Spin-Polarization Effect and Magnetic Exchange Interaction of Core/Shell Structure for Bifunctional Oxygen Electrocatalysis</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489154/" rel="noopener noreferrer">Synergistic Spin-Polarization Effect and Magnetic Exchange Interaction of Core/Shell Structure for Bifunctional Oxygen Electrocatalysis</a></strong> — PubMed<br>
 - Materials science study on core/shell electrocatalysts for oxygen reduction/evolution; peripheral to drug discovery</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489113/">A unified deep generative framework for surrogate-guided molecular discovery across diverse molecular spaces</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489113/" rel="noopener noreferrer">A unified deep generative framework for surrogate-guided molecular discovery across diverse molecular spaces</a></strong> — PubMed<br>
 - Deep generative model for de novo molecular design guided by surrogate predictors across chemical spaces</p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489106/">A Comprehensive (19)F NMR Framework for Fragment-Based Drug Discovery: The Validated Screening Library OpenFL600 and Efficient Affinity Ranking by CSAR</a></strong> — PubMed<br />
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/42489106/" rel="noopener noreferrer">A Comprehensive (19)F NMR Framework for Fragment-Based Drug Discovery: The Validated Screening Library OpenFL600 and Efficient Affinity Ranking by CSAR</a></strong> — PubMed<br>
 - 19F NMR fragment screening platform with validated 600-compound library (OpenFL600) and CSAR affinity ranking method</p>
 <h2>X / Twitter</h2>
-<p><strong><a href="https://x.com/bradloncar/status/2080281805656064134">@bradloncar: BiotechTV's inaugural U.S. Science Summit</a></strong> — Brad Loncar<br />
+<p><strong><a href="https://x.com/bradloncar/status/2080281805656064134" rel="noopener noreferrer">@bradloncar: BiotechTV's inaugural U.S. Science Summit</a></strong> — Brad Loncar<br>
 - Event convened science communicators, biotech leaders (MassBio, Kymera, Alnylam, former FDA officials) to discuss storytelling and ecosystem building</p>
-<p><strong><a href="https://x.com/JacobPlieth/status/2080198443516002483">@JacobPlieth: Roche discontinues RG6468 (RO7566802); mechanism undisclosed</a></strong> — Jacob Plieth<br />
+<p><strong><a href="https://x.com/JacobPlieth/status/2080198443516002483" rel="noopener noreferrer">@JacobPlieth: Roche discontinues RG6468 (RO7566802); mechanism undisclosed</a></strong> — Jacob Plieth<br>
 - RG6468 terminated; not a CDK4/2 inhibitor as previously speculated</p>
-<p><strong><a href="https://x.com/JacobPlieth/status/2080199693003272395">@JacobPlieth: Roche also discontinues mosperafenib, a “paradox-breaker” BRAF inhibitor</a></strong> — Jacob Plieth<br />
+<p><strong><a href="https://x.com/JacobPlieth/status/2080199693003272395" rel="noopener noreferrer">@JacobPlieth: Roche also discontinues mosperafenib, a “paradox-breaker” BRAF inhibitor</a></strong> — Jacob Plieth<br>
 - Mosperafenib halted; relevant comparator to Haisco’s HSK42360/NXP200 (acquired by Nuvalent/NVCT last month)</p>
-<p><strong><a href="https://x.com/JacobPlieth/status/2079977673938325848">@JacobPlieth: GSK’s Jideytro (new brand/asset mention)</a></strong> — Jacob Plieth<br />
+<p><strong><a href="https://x.com/JacobPlieth/status/2079977673938325848" rel="noopener noreferrer">@JacobPlieth: GSK’s Jideytro (new brand/asset mention)</a></strong> — Jacob Plieth<br>
 - Brief reference to GSK asset “Jideytro”; details not provided in tweet</p>
-<p><strong><a href="https://x.com/BioStocks/status/2080246521388298474">@BioStocks: Oppenheimer initiates Pali (PALI) Outperform, PT $8</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2080246521388298474" rel="noopener noreferrer">@BioStocks: Oppenheimer initiates Pali (PALI) Outperform, PT $8</a></strong> — BioStocks<br>
 - Analyst initiation; no clinical detail in tweet</p>
-<p><strong><a href="https://x.com/BioStocks/status/2080243564064211244">@BioStocks: Lilly retatrutide Triumph-2/3 topline highlights</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2080243564064211244" rel="noopener noreferrer">@BioStocks: Lilly retatrutide Triumph-2/3 topline highlights</a></strong> — BioStocks<br>
 - Echoes Phase 3 weight-loss and A1c improvements; triple agonist vs Novo’s GLP-1 monotherapy</p>
-<p><strong><a href="https://x.com/BioStocks/status/2080244054814511537">@BioStocks: Triumph-2/3 numeric weight-loss figures</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2080244054814511537" rel="noopener noreferrer">@BioStocks: Triumph-2/3 numeric weight-loss figures</a></strong> — BioStocks<br>
 - Triumph-2: up to 49.6 lbs (20.8%) at 80 wks; Triumph-3: up to 55.8 lbs (22.6%) at 80 wks</p>
-<p><strong><a href="https://x.com/BioStocks/status/2080239840323424260">@BioStocks: Cantor initiates Dyne (DYN) Overweight</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2080239840323424260" rel="noopener noreferrer">@BioStocks: Cantor initiates Dyne (DYN) Overweight</a></strong> — BioStocks<br>
 - Analyst initiation; no clinical detail in tweet</p>
-<p><strong><a href="https://x.com/BioStocks/status/2080037422339879081">@BioStocks: Liquidia (LQDA) PT raised to $101 on UTHR patent-case developments</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2080037422339879081" rel="noopener noreferrer">@BioStocks: Liquidia (LQDA) PT raised to $101 on UTHR patent-case developments</a></strong> — BioStocks<br>
 - Judge questions United Therapeutics’ candor in ’327 patent case; increases likelihood Yutrepia avoids skinny label</p>
-<p><strong><a href="https://x.com/BioStocks/status/2079899761528676523">@BioStocks: Lyra (LBRX) accelerates NOVA-2 Phase 3 topline for LB-102 in schizophrenia to 1H’27</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2079899761528676523" rel="noopener noreferrer">@BioStocks: Lyra (LBRX) accelerates NOVA-2 Phase 3 topline for LB-102 in schizophrenia to 1H’27</a></strong> — BioStocks<br>
 - Topline data now expected first half 2027</p>
-<p><strong><a href="https://x.com/BioStocks/status/2079899472885117329">@BioStocks: Monopar (MNPR) initiates rolling NDA for ALXN1840 in Wilson disease</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2079899472885117329" rel="noopener noreferrer">@BioStocks: Monopar (MNPR) initiates rolling NDA for ALXN1840 in Wilson disease</a></strong> — BioStocks<br>
 - Rolling submission underway for copper-chelating candidate</p>
-<p><strong><a href="https://x.com/BioStocks/status/2079873710224212029">@BioStocks: Canaccord initiates Nektar (NKTR) Buy, PT $153</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2079873710224212029" rel="noopener noreferrer">@BioStocks: Canaccord initiates Nektar (NKTR) Buy, PT $153</a></strong> — BioStocks<br>
 - Analyst initiation; no clinical detail in tweet</p>
-<p><strong><a href="https://x.com/BioStocks/status/2079869883299295250">@BioStocks: Repligen (RGEN) to acquire BioLife (BLFS) for $31/share ($11.25 cash + 0.144 RGEN shares)</a></strong> — BioStocks<br />
+<p><strong><a href="https://x.com/BioStocks/status/2079869883299295250" rel="noopener noreferrer">@BioStocks: Repligen (RGEN) to acquire BioLife (BLFS) for $31/share ($11.25 cash + 0.144 RGEN shares)</a></strong> — BioStocks<br>
 - Definitive agreement; strategic combination in bioprocessing</p>
-<hr />
+<hr>
 <p><strong>Worth watching:</strong> Roche’s quiet termination of two oncology assets (RG6468, mosperafenib) may signal pipeline reprioritization; Repligen/BioLife deal reshapes bioprocessing supply chain; retatrutide’s cardiovascular safety signal (MACE-3) warrants scrutiny in upcoming CVOT.</p></article><article class="task youtube"><h3 class="task-label">YouTube</h3><ul>
 <li>Pure Science<ul>
-<li><a href="https://www.youtube.com/shorts/lqOsxjV0UEI">The Math That Connects Three Levels of Reality</a> -- Quanta Magazine<ul>
+<li><a href="https://www.youtube.com/shorts/lqOsxjV0UEI" rel="noopener noreferrer">The Math That Connects Three Levels of Reality</a> -- Quanta Magazine<ul>
 <li>Mathematicians Yu Deng, Zaher Hani, and Xiao Ma resolved a major component of Hilbert's sixth problem, the 125-year-old program to derive macroscopic physical laws from microscopic dynamics with full mathematical rigor.  </li>
 <li>The proof establishes the Boltzmann–Grad limit for the hard-sphere particle system, showing that the many-body Newtonian dynamics of colliding molecules converges to the Boltzmann equation on short timescales.  </li>
 <li>A key technical innovation is the control of pathological "recollision" clusters via a new combinatorial–geometric expansion that quantifies the measure of bad trajectories in the Lanford hierarchy.  </li>
@@ -197,7 +247,7 @@
 </ul>
 </li>
 <li>Other<ul>
-<li><a href="https://www.youtube.com/watch?v=BMZbbewOLvU">Volcanoes Explained: Crash Course Geology #13</a> -- CrashCourse<ul>
+<li><a href="https://www.youtube.com/watch?v=BMZbbewOLvU" rel="noopener noreferrer">Volcanoes Explained: Crash Course Geology #13</a> -- CrashCourse<ul>
 <li>Volcanoes are defined as geological features where magma, gases, and tephra are extruded from the Earth's crust onto the surface.</li>
 <li>Volcanic activity is primarily driven by plate tectonics, occurring at divergent boundaries where plates move apart, subduction zones where one plate is forced under another, and mantle plumes (hotspots) where localized upwelling occurs.</li>
 <li>Magma composition, specifically its silica content and viscosity, significantly influences eruption styles, ranging from effusive flows to highly explosive events.</li>
@@ -206,7 +256,7 @@
 </li>
 </ul>
 </li>
-</ul></article><article class="task podcast"><h3 class="task-label">Podcast</h3><p class="topic">PROTACs and targeted protein degradation: mechanism, ternary complex formation, and the hook effect</p><audio controls src="https://github.com/Camil-H/knowledge_secretary/releases/download/podcast-2026-07-23/podcast_620eefbf2c22413d8bbae5b3feee991e.mp3"></audio></article></section>
+</ul></article><article class="task podcast"><h3 class="task-label">Podcast</h3><p class="topic">PROTACs and targeted protein degradation: mechanism, ternary complex formation, and the hook effect</p><audio controls src="https://github.com/Camil-H/knowledge_secretary/releases/download/podcast-2026-07-23/podcast_620eefbf2c22413d8bbae5b3feee991e.mp3"></audio></article></details>
 <script>
   // Render UTC dates in the viewer's locale format, pinned to UTC so the calendar day never drifts.
   for (const el of document.querySelectorAll("time.js-date"))
